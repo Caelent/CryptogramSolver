@@ -1,5 +1,8 @@
 The purpose of this project is to create a program that can solve a given cryptogram.
 
+I have written the project in both C# and Java. All files are located under the src folder. All the C# files
+are located in the cs folder, and all of the Java files are under the java folder.
+
 I used a file located on a UNIX system that contains hundreds of thousands of words as my
 dictionary. A few things to note on this point:
 
@@ -11,25 +14,24 @@ an incorrect decryption, or the program will be unable to solve your cryptogram.
 will not be used in solving the cryptogram. The program will solve the cryptogram without them and then
 simply fill in the contraction with the appropriate letters.
 
-3. The file does not contain any acronyms. For example, the file contains the words in real life,
+3. The file does not contain any acronyms. For example, the file contains the words "in real life",
 but will not recognize the acronym irl.
 
 4. I have included the file with this project. It is the words.txt file outside the src folder. If you
 wish to add words to the file, please feel free to do so. However, keep in mind the notes above. The
 program is designed to ignore contractions, so don't bother adding any to the dictionary. You may wish
 to add the plural form of some words. I have actually already added a few of them myself, and they are
-still in the file. **Do not move the file. If you move it, the Solver will not be able to find it, and
-the program will not work.** 
+still in the file. **The word.txt file must go in the root folder of your project. Otherwise, the program
+will not be able to open it.** 
 
 As for using the project, I have included the main files involved with the Solver, along with some other
-files that they use. The main files are: [Solver](src/main/com/cryptogram/solver/Solver.java), [Key](src/main/com/cryptogram/solver/Key.java),
-[DataStorage](src/main/com/cryptogram/solver/DataStorage.java), and [Dictionary](src/main/com/cryptogram/solver/Dictionary.java).
+files that they use. The main files are: Solver, Key, DataStorage, and Dictionary.
 
 Once you've pull the project down, all you have to do is create a main. Each of the above-listed classes
 are Singletons. You will only every need to reference the Solver class. Simply get its instance in main,
-and then call its solve() method. The Solver class will handle everything else. I have also provided a Main
-under the src/test folder as an example, and I've included both the files it asks for with the project so you
-can see where they need to go if you want to use them.
+and then call its solve() method. The Solver class will handle everything else. I have also provided a Runner
+class with a main under the src/test folder as an example, and I've included both the files it asks for with
+the project so you can see where they need to go if you want to use them.
 
 Solver has three public methods that are available:
 
