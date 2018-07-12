@@ -1,4 +1,4 @@
-package main.com.cryptogram.solver.java;
+package main.com.cryptogram.solver;
 
 import java.util.Stack;
 

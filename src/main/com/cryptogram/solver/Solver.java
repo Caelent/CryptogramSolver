@@ -1,4 +1,4 @@
-package main.com.cryptogram.solver.java;
+package main.com.cryptogram.solver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -167,9 +167,7 @@ public final class Solver {
     public final String displayKey() {
         StringBuilder msg = new StringBuilder("Here is the key:\n");
         
-        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        
-        for(char letter : alphabet.toCharArray()) {
+        for(char letter : "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray()) {
             msg.append(letter);
             msg.append(" => ");
             msg.append(key.getKey().get(letter));

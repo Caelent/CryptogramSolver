@@ -1,4 +1,4 @@
-package test.com.cryptogram.solver.java;
+package test.com.cryptogram.solver;
 
 import main.com.cryptogram.solver.Solver;
 
@@ -20,6 +20,9 @@ public final class Runner {
         System.out.println("1st decrypted message:");
         System.out.println(result);
 
+        System.out.println("\nKey:");
+        System.out.println(mySolver.displayKey());
+
         String result2 = mySolver.solve("preamble.txt");
 
         System.out.println("\n2nd encrypted message:");
@@ -27,5 +30,8 @@ public final class Runner {
 
         System.out.println("2nd decrypted message:");
         System.out.println(result2);
+
+        System.out.println("\nKey:");
+        System.out.println(mySolver.displayKey());
     }
 }

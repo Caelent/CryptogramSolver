@@ -1,8 +1,5 @@
 The purpose of this project is to create a program that can solve a given cryptogram.
 
-I have written the project in both C# and Java. All files are located under the src folder. All the C# files
-are located in the cs folder, and all of the Java files are under the java folder.
-
 I used a file located on a UNIX system that contains hundreds of thousands of words as my
 dictionary. A few things to note on this point:
 
@@ -25,7 +22,9 @@ still in the file. **The word.txt file must go in the root folder of your projec
 will not be able to open it.** 
 
 As for using the project, I have included the main files involved with the Solver, along with some other
-files that they use. The main files are: Solver, Key, DataStorage, and Dictionary.
+files that they use. The main files are: [Solver](src/main/com/cryptogram/solver/Solver.java),
+[Key](src/main/com/cryptogram/solver/Key.java), [DataStorage](src/main/com/cryptogram/solver/DataStorage.java),
+and [Dictionary](src/main/com/cryptogram/solver/Dictionary.java).
 
 Once you've pull the project down, all you have to do is create a main. Each of the above-listed classes
 are Singletons. You will only every need to reference the Solver class. Simply get its instance in main,
